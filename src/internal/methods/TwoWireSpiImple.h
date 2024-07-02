@@ -26,6 +26,8 @@ License along with NeoPixel.  If not, see
 
 #pragma once
 
+#ifdef LAKIN_TWO_WIRE
+
 #include <SPI.h>
 
 class SpiSpeed40Mhz
@@ -224,3 +226,5 @@ public:
 private:
     T_SPISPEED _speed;
 };
+
+#endif // Lakin
