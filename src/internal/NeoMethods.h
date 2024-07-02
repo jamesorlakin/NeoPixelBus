@@ -26,6 +26,7 @@ License along with NeoPixel.  If not, see
 -------------------------------------------------------------------------*/
 #pragma once
 
+#ifdef LAKIN_TWO_WIRE
 // Generic Two Wire (clk and data) methods
 //
 #include "methods/DotStarGenericMethod.h"
@@ -38,6 +39,7 @@ License along with NeoPixel.  If not, see
 #include "methods/Sm16716GenericMethod.h"
 #include "methods/Mbi6033GenericMethod.h"
 #include "methods/Hd108GenericMethod.h"
+#endif
 
 //Adafruit Pixie via UART, not platform specific
 //

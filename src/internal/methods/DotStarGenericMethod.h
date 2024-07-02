@@ -135,7 +135,6 @@ private:
 
 typedef DotStarMethodBase<TwoWireBitBangImple> DotStarMethod;
 
-#ifdef LAKIN_TWO_WIRE
 #if !defined(__AVR_ATtiny85__) && !defined(ARDUINO_attiny)
 #include "TwoWireSpiImple.h"
 typedef DotStarMethodBase<TwoWireSpiImple<SpiSpeed40Mhz>> DotStarSpi40MhzMethod;
@@ -176,4 +175,3 @@ typedef DotStarMethodBase<TwoWireHspiImple<SpiSpeedHz>> DotStarEsp32HspiHzMethod
 typedef DotStarEsp32Hspi10MhzMethod DotStarEsp32HspiMethod;
 #endif
 
-#endif
